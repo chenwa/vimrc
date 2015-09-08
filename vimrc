@@ -17,11 +17,15 @@ set wildmenu
 set laststatus=2
 
 set nu
-set modeline
+set relativenumber
+set scrolloff=3
 set showmode
+set showcmd
 set nowrap
 set backspace=indent,eol,start
 set ruler
+
+let g:netrw_bufsettings = "noma nomod nonu nowrap ro"
 
 set expandtab
 set shiftwidth=2
@@ -35,10 +39,14 @@ set backupdir=~/.vimtmp,.
 set directory=~/.vimtmp,.
 
 nnoremap ; :
+nnoremap <tab> %
+vnoremap <tab> %
 map <C-j> <C-w>w
 map <C-h> <C-w>H
 imap ` <esc>
-map <SPACE> <leader>
+map <space> <leader>
 
 cab vimrc e $MYVIMRC
 cab load so $MYVIMRC
+
+vs
