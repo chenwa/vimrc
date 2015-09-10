@@ -49,4 +49,4 @@ map <space> <leader>
 cab vimrc e $MYVIMRC
 cab load so $MYVIMRC
 
-vs
+set splitright
