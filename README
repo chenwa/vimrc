@@ -1,0 +1,5 @@
+This is my personal vim setup
+
+These files go in "~/.vim", and I symlink "~/.vimrc" to "~/.vim/vimrc"
+
+You will need to run :PluginInstall for Vundle to load plugins on first run
