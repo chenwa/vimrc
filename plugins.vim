@@ -16,7 +16,6 @@ Plugin 'bling/vim-airline'
 Plugin 'justinmk/vim-sneak'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'takac/vim-hardtime'
-Plugin 'davidhalter/jedi-vim'
 
 " Shougo
 Plugin 'Shougo/unite.vim'
@@ -93,12 +92,3 @@ let g:neocomplete#enable_smart_case=1
 let g:neocomplete#sources#syntax#min_keyboard_length=3
 inoremap <expr><tab> pumvisible() ? "\<C-n>" : "\<tab>"
 
-autocmd FileType python setlocal omnifunc=jedi#completions
-let g:jedi#completions_enabled=0
-let g:jedi#auto_vim_configuration=0
-if !exists('g:neocomplete#force_omni_input_patterns')
-  let g:neocomplete#force_omni_input_patterns = {}
-endif
-let g:neocomplete#force_omni_input_patterns.python =
-\ '\%([^. \t]\.\|^\s*@\|^\s*from\s.\+import \|^\s*from \|^\s*import \)\w*'
-" alternative pattern: '\h\w*\|[^. \t]\.\w*'
