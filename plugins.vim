@@ -63,7 +63,7 @@ nmap <leader>9 <Plug>AirlineSelectTab9
 set background=dark
 
 let g:hardtime_default_on=1
-let g:hardtime_maxcount=1
+let g:hardtime_maxcount=2
 
 " Unite
 " let g:unite_source_history_yank_enable=1
@@ -91,4 +91,5 @@ let g:neocomplete#enable_at_startup=1
 let g:neocomplete#enable_smart_case=1
 let g:neocomplete#sources#syntax#min_keyboard_length=3
 inoremap <expr><tab> pumvisible() ? "\<C-n>" : "\<tab>"
+set completeopt-=preview
 

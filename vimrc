@@ -43,7 +43,6 @@ nnoremap <tab> %
 vnoremap <tab> %
 map <C-j> <C-w>w
 map <C-h> <C-w>H
-imap ` <esc>
 map <space> <leader>
 
 cab vimrc e $MYVIMRC
