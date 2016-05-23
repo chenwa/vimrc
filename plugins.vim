@@ -16,6 +16,7 @@ Plugin 'bling/vim-airline'
 Plugin 'justinmk/vim-sneak'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'takac/vim-hardtime'
+Plugin 'derekwyatt/vim-scala'
 
 " Shougo
 Plugin 'Shougo/unite.vim'
