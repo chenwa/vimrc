@@ -21,7 +21,7 @@ Plugin 'derekwyatt/vim-scala'
 
 " Shougo
 Plugin 'Shougo/unite.vim'
-Plugin 'Shougo/neocomplete.vim'
+" Plugin 'Shougo/neocomplete.vim'
 Plugin 'Shougo/neomru.vim'
 
 " plugin from http://vim-scripts.org/vim/scripts.html
@@ -69,9 +69,9 @@ function! s:unite_settings()
   imap <buffer> <C-k>   <Plug>(unite_select_previous_line)
 endfunction
 
-let g:neocomplete#enable_at_startup=1
-let g:neocomplete#enable_smart_case=1
-let g:neocomplete#sources#syntax#min_keyboard_length=3
-inoremap <expr><tab> pumvisible() ? "\<C-n>" : "\<tab>"
-set completeopt-=preview
+" let g:neocomplete#enable_at_startup=1
+" let g:neocomplete#enable_smart_case=1
+" let g:neocomplete#sources#syntax#min_keyboard_length=3
+" inoremap <expr><tab> pumvisible() ? "\<C-n>" : "\<tab>"
+" set completeopt-=preview
 
