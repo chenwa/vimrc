@@ -1,7 +1,8 @@
 " These terminal color options are hacky af
-set t_Co=16777216
 set term=xterm
-" let g:solarized_termcolors=256
+set termencoding=utf8
+set t_Co=1024
+let g:solarized_termcolors=1024
 let g:solarized_term=1
 colorscheme solarized
 let g:airline_powerline_fonts=1
@@ -18,4 +19,3 @@ nmap <leader>7 <Plug>AirlineSelectTab7
 nmap <leader>8 <Plug>AirlineSelectTab8
 nmap <leader>9 <Plug>AirlineSelectTab9
 set background=dark
-
