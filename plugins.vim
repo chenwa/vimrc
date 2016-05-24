@@ -12,7 +12,8 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 
 " plugin on GitHub repo
-Plugin 'bling/vim-airline'
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
 Plugin 'justinmk/vim-sneak'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'takac/vim-hardtime'
@@ -42,26 +43,6 @@ Plugin 'Shougo/neomru.vim'
 call vundle#end()            " required
 filetype plugin indent on    " required
 
-
-" These terminal color options are hacky af
-set t_Co=1024
-let g:solarized_termcolors=1024
-let g:solarized_term=1
-colorscheme solarized
-let g:airline_powerline_fonts=1
-let g:airline_theme='murmur'
-let g:airline#extensions#tabline#enabled=1
-let g:airline#extensions#tabline#buffer_idx_mode=1
-nmap <leader>1 <Plug>AirlineSelectTab1
-nmap <leader>2 <Plug>AirlineSelectTab2
-nmap <leader>3 <Plug>AirlineSelectTab3
-nmap <leader>4 <Plug>AirlineSelectTab4
-nmap <leader>5 <Plug>AirlineSelectTab5
-nmap <leader>6 <Plug>AirlineSelectTab6
-nmap <leader>7 <Plug>AirlineSelectTab7
-nmap <leader>8 <Plug>AirlineSelectTab8
-nmap <leader>9 <Plug>AirlineSelectTab9
-set background=dark
 
 let g:hardtime_default_on=1
 let g:hardtime_maxcount=2

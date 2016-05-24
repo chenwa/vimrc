@@ -1,4 +1,5 @@
 source ~/.vim/plugins.vim
+source ~/.vim/looks.vim
 source ~/.vim/languages.vim
 
 syntax on
