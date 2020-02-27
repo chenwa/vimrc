@@ -57,10 +57,17 @@ let &t_te.="\e[0 q"
 " Plugin Manager
 call plug#begin()
 Plug 'tpope/vim-sensible'
-Plug  'arzg/vim-colors-xcode'
+Plug  'arzg/vim-colors-xcode' "Color Theme
+Plug 'itchyny/lightline.vim' " Lightline
+Plug 'preservim/nerdtree'
 
-" On-demand loading
-Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
 call plug#end()
 
 colorscheme xcodedarkhc
+let g:lightline = {
+      \ 'colorscheme': 'jellybeans',
+      \ }
+" Nerd Tree Settings
+map <C-o> :NERDTreeToggle<CR>
+let g:NERDTreeMapJumpNextSibling = '<Nop>'
+let g:NERDTreeMapJumpPrevSibling = '<Nop>'
