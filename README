@@ -1,0 +1,5 @@
+This is my personal vim setup
+
+These files go in "~/.vim"
+
+Run setup.sh to setup.

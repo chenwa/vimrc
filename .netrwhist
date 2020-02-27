@@ -1,0 +1,8 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =6
+let g:netrw_dirhist_1='/Users/warrenchen/Documents/GitHub/MCS/CodeLabs/.git'
+let g:netrw_dirhist_2='/Users/warrenchen/.vim'
+let g:netrw_dirhist_3='/Users/warrenchen/.vim/.git'
+let g:netrw_dirhist_4='/Users/warrenchen/.vim/.git/info'
+let g:netrw_dirhist_5='/Users/warrenchen/.vim/.git'
+let g:netrw_dirhist_6='/Users/warrenchen/.vim/.git/info'
