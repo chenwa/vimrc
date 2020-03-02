@@ -41,7 +41,7 @@ vnoremap <tab> %
 noremap <C-j> <C-w>w
 noremap <C-h> <C-w>H
 noremap <space> <leader>
-imap jj <Esc>
+inoremap jj <Esc>
 
 cab vimrc e $MYVIMRC
 cab load so $MYVIMRC
