@@ -38,9 +38,9 @@ set directory=~/.vimtmp,.
 nnoremap ; :
 nnoremap <tab> %
 vnoremap <tab> %
-map <C-j> <C-w>w
-map <C-h> <C-w>H
-map <space> <leader>
+noremap <C-j> <C-w>w
+noremap <C-h> <C-w>H
+noremap <space> <leader>
 imap jj <Esc>
 
 cab vimrc e $MYVIMRC
@@ -56,6 +56,7 @@ let &t_te.="\e[0 q"
 
 " Plugin Manager
 call plug#begin()
+
 Plug 'tpope/vim-sensible'
 Plug  'arzg/vim-colors-xcode' "Color Theme
 Plug 'itchyny/lightline.vim' " Lightline
@@ -64,9 +65,11 @@ Plug 'preservim/nerdtree'
 call plug#end()
 
 colorscheme xcodedarkhc
+
 let g:lightline = {
       \ 'colorscheme': 'jellybeans',
       \ }
+
 " Nerd Tree Settings
 map <C-o> :NERDTreeToggle<CR>
 let g:NERDTreeMapJumpNextSibling = '<Nop>'
